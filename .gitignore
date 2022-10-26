@@ -4,3 +4,6 @@
 **/*.gen
 **/*.hw
 **/*.str
+
+**/*.runs
+**/*.ip_user_files
