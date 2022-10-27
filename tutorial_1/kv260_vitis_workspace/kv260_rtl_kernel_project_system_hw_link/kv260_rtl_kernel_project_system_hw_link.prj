@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="kv260_rtl_kernel_project_system_hw_link" platform="/home/shareefj/git/kv260_tutorial/tutorial_1/kv260_vitis_workspace/kv260_platform_project/export/kv260_platform_project/kv260_platform_project.xpfm" systemProject="kv260_rtl_kernel_project_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.1328393577">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="kernel_top" projectName="kv260_rtl_kernel_project" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="kernel_top_1" slr=""/>
+        </kernels>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>connect=pmod:/kernel_top_1/pmod</configSettings>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.1197230284">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="kernel_top" projectName="kv260_rtl_kernel_project" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="kernel_top_1" slr=""/>
+        </kernels>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>connect=pmod:/kernel_top_1/pmod</configSettings>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.1102261606">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="kernel_top" projectName="kv260_rtl_kernel_project" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="kernel_top_1" slr=""/>
+        </kernels>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>connect=pmod:/kernel_top_1/pmod</configSettings>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="kernel_top" projectName="kv260_rtl_kernel_project" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="kernel_top_1" slr=""/>
+        </kernels>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>connect=pmod:/kernel_top_1/pmod</configSettings>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
